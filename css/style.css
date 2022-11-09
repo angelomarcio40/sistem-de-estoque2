@@ -1,3 +1,8 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -50,4 +55,23 @@ tbody th {
 tbody td {
   font-weight: 500;
   color: rgba(255,255,255,.65);
+}
+
+#grid-produtos{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+
+.figure-produtos{
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.img-produtos{
+  width: 100%;
+}
+
+.figcaption-produtos{
+  padding:  10px;
 }
