@@ -8,11 +8,29 @@ body{
     padding: 0;
 }
 
+h2,
+h3{
+    margin: 60px;
+}
+
+#tabela{
+    margin: 10px;
+}
+
 .container{
     display: grid;
     width: 100vw;
     height: 100vh;
+    background-color: #17a2b8;
     grid-template-columns: 1fr;
+}
+
+.produtos{
+    margin: 10px;
+}
+
+.fabricantes{
+    margin: 10px;
 }
 
 .btn-cadastrar{
@@ -22,4 +40,5 @@ body{
     border: none;
     border-radius: 3px;
     font-weight: bold;
+    cursor: pointer;
 }
