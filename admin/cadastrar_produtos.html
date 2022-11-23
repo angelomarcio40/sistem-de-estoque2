@@ -12,18 +12,29 @@
 
     <h2>Cadastrar Produtos</h2>
 
-    <form>
+    <form id="form-produtos">
+        <div class="grid-produtos">
 
-        <div class="produtos">
-            <label for="produtos">Produtos</label>
-            <input type="text" name="produtos" id="produtos">
+            <div>
+                <label for="produtos">Produtos</label>
+                <input type="text" name="produtos" id="produtos">
+            </div>
+
+            <div>
+                <label for="fabricantes">Fabricantes</label>
+                <input type="text" name="fabricantes" id="fabricantes">
+            </div>
+
+            <div>
+                <label for="tipo">Tipo</label>
+                <select name="tipo" id="tipo">
+                    <option value="" disable select>Selecione...</option>
+                </select>
+            </div>
+
         </div>
 
-        <div class="fabricantes">
-            <label for="fabricantes">Fabricantes</label>
-            <input type="text" name="fabricantes" id="fabricantes">
-            <button class="btn-cadastrar">Cadastrar</button>
-        </div>
+        <button class="btn-cadastrar" type="button" onclick="addProdutos()">Cadastrar</button>
 
     </form>
 
